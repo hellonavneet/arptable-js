@@ -1,6 +1,6 @@
 {
   "name": "arptable-js",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "NPM package that returns rich object of ARP table",
   "main": "index.js",
   "scripts": {

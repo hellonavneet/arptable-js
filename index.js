@@ -11,17 +11,17 @@ module.exports = {
            var output = [];
            var interface = "Unknown";
            for (x in lines) {
-               var line = lines[x];
+               var line = lines[x].trim();
                if(line.indexOf('Interface:') !== -1) {
                   interface = line.trim().replace('Interface: ','');
                }
-              else if(line.indexOf('Internet Address') === -1) {
-                    var columns = line.trim().split(' ');
+              else if(line && line.indexOf('Internet Address') === -1) {
+                    var columns = line.match(/[^ ]+/g);
                     output.push({
+                        'Interface': interface,
                         'InternetAddress': columns[0],
                         'PhysicalAddress': columns[1],
-                        'Type': columns[2],
-                        'Interface': interface
+                        'Type': columns[2]
                     });
               }
            }
