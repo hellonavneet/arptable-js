@@ -1,0 +1,22 @@
+{
+  "name": "arptable-js",
+  "version": "0.0.1",
+  "description": "NPM package that returns rich object of ARP table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellonavneet/arptable-js.git"
+  },
+  "author": "Navneet Gupta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hellonavneet/arptable-js/issues"
+  },
+  "homepage": "https://github.com/hellonavneet/arptable-js#readme",
+  "dependencies": {
+    "child_process": "^1.0.2"
+  }
+}
